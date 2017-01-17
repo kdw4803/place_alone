@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="colorful-text">
+    <div class="red">Hello, World! {{name}}</div>
+    <div class="red">Hello, World! Marco</div>
+    <div class="red">Hello, World! Rachel</div>
+    {% for cafe in cafe_list %}
+        {{ cafe.name }}
+    {% endfor %}
+</div>
+{% endblock %}
